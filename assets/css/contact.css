@@ -1,0 +1,161 @@
+main .contact-location {
+  display: var(--flex);
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact-location .contact {
+  width: 40%;
+  display: var(--flex);
+  flex-direction: column;
+  gap: 1.438rem;
+}
+
+.contact span {
+  font-size: 0.75rem;
+}
+
+.contact h2 {
+  font-size: 1.625rem;
+  line-height: 2rem;
+}
+
+.contact address p {
+  color: var(--clr-small-p);
+  font-size: 0.875rem;
+  font-style: normal;
+  line-height: 2rem;
+  padding-left: 2.5rem;
+  position: relative;
+}
+
+.contact address p::before {
+  content: "\f279";
+  color: var(--clr-black);
+  font-family: "Font Awesome 5 Free";
+  font-weight: 700;
+  position: absolute;
+  top: -1.5px;
+  left: 0;
+}
+
+.contact address p:nth-child(2):before {
+  content: "\f0e0";
+  font-weight: 500;
+}
+
+.contact address p:nth-child(3):before {
+  content: "\f879";
+}
+
+.contact address p:nth-child(4):before {
+  content: "\f017";
+  font-weight: 500;
+}
+
+.contact-location .map {
+  width: 55%;
+  height: 25rem;
+}
+
+.contact-location .map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+/* CTA */
+main .cta {
+  display: flex;
+  justify-content: space-between;
+  margin: 1.875rem;
+  padding: 5rem;
+  border: 1px solid rgba(0, 0, 0, 0.171);
+}
+
+.cta form {
+  display: var(--flex);
+  flex-direction: column;
+  gap: 1.563rem;
+  width: 65%;
+}
+
+.cta form span {
+  font-size: 0.75rem;
+}
+
+.cta form input,
+.cta form textarea {
+  padding: 0.75rem 1.5rem;
+  outline: none;
+  border: 1px solid #e1e1e1;
+}
+
+.cta button {
+  max-width: max-content;
+  padding: 0.938rem 1.875rem;
+  background-color: var(--clr-088178);
+  border: none;
+  border-radius: 4px;
+  color: var(--clr-white);
+  font-weight: 600;
+}
+
+.cta .people-info {
+  display: var(--flex);
+  column-gap: 0.938rem;
+  margin-bottom: 1.25rem;
+}
+
+.people-info img {
+  --width-height: 4.063rem;
+  width: var(--width-height);
+  height: var(--width-height);
+}
+
+.people-info p:not(p:nth-child(1)) {
+  color: var(--clr-small-p);
+  font-size: 0.813rem;
+  line-height: 1.563rem;
+  white-space: nowrap;
+}
+
+.people-info p strong {
+  line-height: 1.563rem;
+}
+
+/* Tablets */
+
+/* max-width: 768px */
+@media (max-width: 48rem) {
+  main .cta {
+    padding: 2.5rem;
+  }
+}
+
+/* Large to small mobile */
+/* max-width: 576px */
+@media (max-width: 36rem) {
+  main .contact-location {
+    flex-direction: column;
+    gap: 1.875rem;
+  }
+
+  .contact-location .contact {
+    width: 100%;
+  }
+
+  .contact-location .map {
+    width: 100%;
+  }
+
+  main .cta {
+    flex-direction: column;
+    gap: 1.875rem;
+    margin: 0.625rem;
+    padding: 1.875rem 0.625rem;
+  }
+
+  .cta form {
+    width: 100%;
+  }
+}

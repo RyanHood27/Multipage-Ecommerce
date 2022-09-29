@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multipage Ecommerce</title>
+    <link rel="stylesheet" href="../css/home.css" />
+    <link rel="shortcut icon" href="/img/logo.png" type="image/x-icon" />
+
+    <script defer src="../js/script.js"></script>
+
+    <script defer src="../js/cart.js"></script>
+
+    <script
+      src="https://kit.fontawesome.com/5daa8eb347.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <a href="">
+        <img src="/img/logo.png" alt="logo" />
+      </a>
+
+      <nav>
+        <ul id="js-navigation">
+          <li>
+            <a href="home.html">Home</a>
+          </li>
+          <li>
+            <a href="shop.html">Shop</a>
+          </li>
+          <li>
+            <a href="blog.html">Blog</a>
+          </li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+          <li>
+            <a class="active" href="cart.html">
+              <i class="fa-solid fa-bag-shopping"></i>
+            </a>
+          </li>
+          <li id="close">
+            <i class="fa-solid fa-x"></i>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- mobile icon -->
+      <div class="mobile">
+        <a href="cart.html">
+          <i class="fa-solid fa-bag-shopping"></i>
+        </a>
+
+        <i id="js-menu-bar" class="fas fa-outdent"></i>
+      </div>
+
+      <div class="confirm-box">
+        <p class="confirm">Are you sure you want to remove this item?</p>
+        <span class="btn-yes">Yes</span>
+        <span class="btn-no">No</span>
+      </div>
+    </header>
+    <!-- end of header -->
+
+    <main>
+      <!-- hero section -->
+      <section class="page-header about-header">
+        <h1>#cart</h1>
+        <p>Add your coupon & SAVE up to 70%!</p>
+      </section>
+
+      <!-- cart section -->
+      <section class="cart section-padding">
+        <table>
+          <thead>
+            <tr>
+              <td>REMOVE</td>
+              <td>IMAGE</td>
+              <td>PRODUCT</td>
+              <td>PRICE</td>
+              <td>SIZE</td>
+              <td>QUANTITY</td>
+              <td>SUBTOTAL</td>
+            </tr>
+          </thead>
+
+          <tbody id="tbody">
+            <!-- <tr>
+              <td>
+                <a href="#">
+                  <i class="far fa-times-circle"></i>
+                  <img src="/img/logo.png" alt="remove" id="id" />
+                </a>
+              </td>
+              <td>
+                <img src="" alt="" id="item_image" />
+              </td>
+              <td>
+                <span id="item_name"></span>
+              </td>
+              <td>
+                <data id="item_price" value="118.19"></data>
+              </td>
+              <td>
+                <span id="item_size"></span>
+              </td>
+              <td>
+                <span id="item_quantity"></span>
+              </td>
+              <td>
+                <data id="subtotal" value="118.19"></data>
+              </td>
+            </tr> -->
+          </tbody>
+        </table>
+
+        <p class="no-item-sign">You don't have any item...</p>
+      </section>
+
+      <!-- cart total section -->
+      <section class="cart-total section-padding">
+        <div class="apply-coupon">
+          <h4>Apply Coupon</h4>
+          <div>
+            <input type="text" placeholder="Enter Your Coupon" />
+            <button class="btn">Apply</button>
+          </div>
+        </div>
+        <div class="cart-total-box">
+          <h4>Cart Totals</h4>
+          <table>
+            <tbody>
+              <tr>
+                <td>Cart Subtotal</td>
+                <td>
+                  <data value="0" id="cart_subtotals"></data>
+                </td>
+              </tr>
+              <tr>
+                <td>Shipping</td>
+                <td>
+                  <data value="0" id="shipping"></data>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>Total</strong>
+                </td>
+                <td>
+                  <data value="0" id="total"> <strong></strong> </data>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <button class="btn">Proceed to checkout</button>
+        </div>
+      </section>
+    </main>
+    <!-- end of main -->
+
+    <footer class="section-padding">
+      <section class="top" id="grid">
+        <section class="col1">
+          <img src="/img/logo.png" alt="logo" />
+          <h5>Contacts</h5>
+          <address>
+            <p>
+              <strong>Address: </strong>562 Wellington Road, Street 32, San
+              Francisco
+            </p>
+
+            <p><strong>Phone: </strong>+01 2222 365 (+91) 01 2345 6789</p>
+
+            <p>
+              <strong>Hours: </strong><time datetime="22:00">10:00</time> -
+              <time datetime="18:00">18:00</time>, Mon - Sat
+            </p>
+          </address>
+          <div class="follow-us">
+            <h4>Follow us</h4>
+            <div class="icon">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href=""> <i class="fab fa-twitter"></i></a>
+              <a href=""> <i class="fab fa-instagram"></i></a>
+              <a href=""> <i class="fab fa-pinterest"></i></a>
+              <a href=""> <i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </section>
+
+        <section class="col2">
+          <h5>About</h5>
+          <a href="#">About us</a>
+          <a href="#">Delivery Information</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Contact Us</a>
+        </section>
+
+        <section class="col3">
+          <h5>My Account</h5>
+          <a href="#">Sign In</a>
+          <a href="#">View Cart</a>
+          <a href="#">My Wishlist</a>
+          <a href="#">Track My Order</a>
+          <a href="#">Help</a>
+        </section>
+
+        <section class="col4">
+          <h5>Install App</h5>
+          <p>From App Store or Google Play</p>
+          <div>
+            <img src="/img/pay/app.jpg" alt="" />
+            <img src="/img/pay/play.jpg" alt="" />
+          </div>
+
+          <p>Secure Payment Gateways</p>
+          <img src="/img/pay/pay.png" alt="pay" />
+        </section>
+      </section>
+
+      <section class="bottom">
+        <p>
+          <small>&copy; 2021, Tech2 etc</small> - HTML CSS Ecommerce Template
+        </p>
+      </section>
+    </footer>
+
+    <!-- template for product cart rendering -->
+    <template id="table-row-template">
+      <tr>
+        <td>
+          <i class="far fa-times-circle"></i>
+        </td>
+        <td>
+          <img src="" alt="" id="item_image" />
+        </td>
+        <td>
+          <span id="item_name"></span>
+        </td>
+        <td>
+          <data id="item_price" value="118.19"></data>
+        </td>
+        <td>
+          <span id="item_size"></span>
+        </td>
+        <td>
+          <span id="item_quantity"></span>
+        </td>
+        <td>
+          <data id="subtotal" value="118.19"></data>
+        </td>
+      </tr>
+    </template>
+  </body>
+</html>

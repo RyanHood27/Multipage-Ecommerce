@@ -1,0 +1,86 @@
+main .page-header {
+  background-image: url(/img/banner/b1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  min-height: 40vh;
+  display: var(--flex);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-header :is(h1, p) {
+  color: var(--clr-white);
+  line-height: 3.125rem;
+}
+
+.page-header h1 {
+  font-size: 2.75rem;
+}
+
+.page-header p {
+  font-weight: 400;
+}
+
+main .featured-products #grid {
+  padding-top: 0;
+}
+
+nav .simple-pagination {
+  display: var(--flex);
+  justify-content: center;
+  gap: 0.625rem;
+  margin-top: 3.125rem;
+}
+
+nav .simple-pagination ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+}
+
+.simple-pagination ul li {
+  background-color: var(--clr-088178);
+  border-radius: 4px;
+  padding: 0.625rem;
+  cursor: pointer;
+}
+
+.simple-pagination ul :is(li:first-child, li:last-child).active {
+  width: 3.125rem;
+}
+
+.simple-pagination ul :is(span, a) {
+  color: white;
+  font-weight: normal;
+}
+
+.simple-pagination ul :is(span, a):hover {
+  color: black;
+}
+
+.simple-pagination li.active span:hover {
+  color: white;
+}
+
+.simple-pagination :is(.prev, .next) {
+  font-weight: 600;
+}
+
+.simple-pagination :is(.prev.current, .next.current) {
+  background: transparent;
+  color: white;
+}
+
+.simple-pagination :is(.prev.page-link, .next.page-link) {
+  background: transparent;
+}
+
+.simple-pagination ul li.active {
+  background-color: black;
+  text-align: center;
+  width: 2.188rem;
+}
